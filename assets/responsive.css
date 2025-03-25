@@ -1,0 +1,214 @@
+/* Mobile Styles */
+@media screen and (max-width: 880px) {
+  /* Navbar */
+  .navbar {
+    width: 90%;
+    padding: 0.5rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  /* Tech Stack Section */
+  .tech-stack {
+    padding: 100px 20px;
+  }
+
+  .tech-icons {
+    gap: 8rem;
+  }
+
+  /* Preview Section */
+  .preview {
+    padding: 100px 20px;
+  }
+
+  .preview h2 {
+    font-size: 2rem;
+  }
+
+  .preview-image img {
+    margin: 50px auto 0;
+    border-radius: 1.5rem;
+  }
+
+  /* About Section */
+  .about {
+    padding: 100px 20px;
+  }
+
+  .about h2 {
+    font-size: 2rem;
+  }
+
+  .creator-preview {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 20px;
+  }
+
+  .creator-card {
+    width: 150px;
+    height: 180px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 40px 20px;
+    margin-top: 50px;
+    margin-bottom: -17px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  .footer-left {
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .footer-logo {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-logo img {
+    height: 45px;
+  }
+
+  .footer-description {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+
+  .footer-links {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .footer-links a {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .copyright {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+
+/* Medium screens for smooth navbar responsivness */
+@media screen and (max-width: 1024px) {
+  .navbar {
+    width: 70%;
+  }
+  .footer {
+    width: auto;
+  }
+}
+
+
+/* Mobile phones */
+@media screen and (max-width: 480px) {
+  .navbar {
+    width: 95%;
+    padding: 0.3rem;
+  }
+
+  .nav-container {
+    padding: 0.8rem 1rem;
+  }
+
+  .logo img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .logo-text {
+    font-size: 1.1rem;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  transition: 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: rgba(28, 28, 28, 0.95);
+    backdrop-filter: blur(12px);
+    padding: 1.5rem;
+    border-radius: 12px;
+    flex-direction: column;
+    gap: 1.5rem;
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+  }
+
+  .nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .hamburger.active span:first-child {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:last-child {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  main {
+    min-height: 100vh; 
+    padding-bottom: 80px; 
+  }
+}

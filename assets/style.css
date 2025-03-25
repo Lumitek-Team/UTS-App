@@ -306,7 +306,7 @@ footer {
 }
 
 .footer-content {
-  max-width: 1200px;
+  width: auto;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -366,7 +366,7 @@ footer {
   line-height: 1;
 }
 
-/* Add these new animation classes */
+/* Smooth Animation */
 .fade-in-section {
   opacity: 0;
   transform: translateY(20px);
