@@ -109,8 +109,8 @@ body {
 }
 
 .hero h1 {
-  font-size: 3.8rem;
-  font-weight: 800;
+  font-size: 4rem;
+  font-weight: bolder;
   margin-bottom: 1.5rem;
   line-height: 1.2;
   animation: fadeInUp 0.8s ease forwards;
