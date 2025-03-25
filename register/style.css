@@ -16,7 +16,8 @@ body {
 	font-family: "Comfortaa", sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
-	overflow-y: scroll;
+	overflow-y:scroll;
+	overflow-x: hidden;
 }
 .left-section,
 .right-section {
@@ -26,7 +27,7 @@ body {
 .blockquote {
 	font-family: "Fira Code", monospace;
 	font-optical-sizing: auto;
-	font-weight: <weight>;
+	/* font-weight: <weight>; */
 	font-style: normal;
 }
 
