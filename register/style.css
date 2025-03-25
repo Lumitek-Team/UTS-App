@@ -16,7 +16,7 @@ body {
 	font-family: "Comfortaa", sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
-	overflow: scroll;
+	overflow-y: scroll;
 }
 .left-section,
 .right-section {
