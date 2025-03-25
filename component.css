@@ -80,3 +80,9 @@ a {
 .form-button:hover {
 	background-color: #86e586;
 }
+
+@media screen and (max-width: 440px) {
+	.form-group {
+		width: 100%;
+	}
+}
