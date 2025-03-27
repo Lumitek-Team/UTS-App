@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talas - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../assets/img/logo/Talas Logo Design_Talas - Main - Color.svg">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar -->
+        <aside class="sidebar left-sidebar">
+            <div class="profile">
+                <div class="avatar">
+                    <img src="../assets/img/avatar-placeholder.png" alt="User Avatar">
+                </div>
+                <div class="user-info">
+                    <h3 class="user-name">Peter Jackson</h3>
+                    <p class="user-title">Software Engineering Student</p>
+                </div>
+            </div>
+            
+            <nav class="nav-menu">
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-comment"></i> Messages</a></li>
+                    <li><a href="#"><i class="fas fa-bookmark"></i> Saved Projects</a></li>
+                    <li><a href="#"><i class="fas fa-bell"></i> Notification</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+                </ul>
+            </nav>
+            
+            <button class="create-project-btn">
+                <i class="fas fa-plus"></i> Create New Project
+            </button>
+        </aside>
+        
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="search-container">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" placeholder="Search Project" class="search-input">
+            </div>
+            
+            <div class="feed">
+                <!-- Project Card 1 -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <div class="user-avatar">
+                            <img src="../assets/img/avatar-placeholder.png" alt="User Avatar">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-author">Hanno</h3>
+                            <p class="project-role">Fullstack Developer</p>
+                            <h4 class="project-title">Next-Gen Portfolio Website</h4>
+                        </div>
+                        <div class="card-options">
+                            <span class="time">3 hrs</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-description">
+                        <p>A modern, sleek portfolio website built with React and Tailwind CSS. Featuring dark mode, smooth animations, and a fully responsive layout.</p>
+                        <div class="tech-stack">
+                            <span class="tech-item"><i class="fas fa-code"></i> Tech Stack: React, Tailwind CSS, Framer Motion</span>
+                        </div>
+                        <div class="github-link">
+                            <span class="github-item"><i class="fab fa-github"></i> GitHub Repo: homepage</span>
+                        </div>
+                        <p class="collaboration-text">Excited to share my latest project! Let me know what you think and feel free to drop feedback. Open for collaborations!</p>
+                    </div>
+                    
+                    <div class="project-images">
+                        <div class="image-container"></div>
+                        <div class="image-container"></div>
+                        <div class="image-container"></div>
+                    </div>
+                    
+                    <div class="card-actions">
+                        <button class="action-btn like-btn"><i class="far fa-heart"></i> 12 Likes</button>
+                        <button class="action-btn comment-btn"><i class="far fa-comment"></i> 2 Comments</button>
+                        <button class="action-btn save-btn"><i class="far fa-bookmark"></i> Save</button>
+                        <button class="action-btn share-btn"><i class="fas fa-share"></i> Share</button>
+                    </div>
+                </div>
+                
+                <!-- Project Card 2 (duplicate for demonstration) -->
+                <div class="project-card">
+                    <div class="card-header">
+                        <div class="user-avatar">
+                            <img src="../assets/img/avatar-placeholder.png" alt="User Avatar">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-author">Hanno</h3>
+                            <p class="project-role">Fullstack Developer</p>
+                            <h4 class="project-title">Next-Gen Portfolio Website</h4>
+                        </div>
+                        <div class="card-options">
+                            <span class="time">3 hrs</span>
+                        </div>
+                    </div>
+                    
+                    <div class="project-description">
+                        <p>A modern, sleek portfolio website built with React and Tailwind CSS. Featuring dark mode, smooth animations, and a fully responsive layout.</p>
+                        <div class="tech-stack">
+                            <span class="tech-item"><i class="fas fa-code"></i> Tech Stack: React, Tailwind CSS, Framer Motion</span>
+                        </div>
+                        <div class="github-link">
+                            <span class="github-item"><i class="fab fa-github"></i> GitHub Repo: homepage</span>
+                        </div>
+                        <p class="collaboration-text">Excited to share my latest project! Let me know what you think and feel free to drop feedback. Open for collaborations!</p>
+                    </div>
+                    
+                    <div class="project-images">
+                        <div class="image-container"></div>
+                        <div class="image-container"></div>
+                        <div class="image-container"></div>
+                    </div>
+                    
+                    <div class="card-actions">
+                        <button class="action-btn like-btn"><i class="far fa-heart"></i> 12 Likes</button>
+                        <button class="action-btn comment-btn"><i class="far fa-comment"></i> 2 Comments</button>
+                        <button class="action-btn save-btn"><i class="far fa-bookmark"></i> Save</button>
+                        <button class="action-btn share-btn"><i class="fas fa-share"></i> Share</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Right Sidebar -->
+        <aside class="sidebar right-sidebar">
+            <div class="suggestions-section">
+                <div class="section-header">
+                    <h3>Suggested for you</h3>
+                    <a href="#" class="view-all">View all</a>
+                </div>
+                
+                <div class="suggestion-list">
+                    <!-- Suggestion 1 -->
+                    <div class="suggestion-item">
+                        <div class="suggestion-avatar">
+                            <img src="../assets/img/avatar-placeholder.png" alt="User Avatar">
+                        </div>
+                        <div class="suggestion-info">
+                            <h4 class="suggestion-name">Dicky A</h4>
+                            <p class="suggestion-title">Engineering Student</p>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                    
+                    <!-- Suggestion 2 -->
+                    <div class="suggestion-item">
+                        <div class="suggestion-avatar">
+                            <img src="../assets/img/avatar-placeholder.png" alt="User Avatar">
+                        </div>
+                        <div class="suggestion-info">
+                            <h4 class="suggestion-name">Dicky A</h4>
+                            <p class="suggestion-title">Engineering Student</p>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                    
+                    <!-- Suggestion 3 -->
+                    <div class="suggestion-item">
+                        <div class="suggestion-avatar">
+                            <img src="../assets/img/avatar-placeholder.png" alt="User Avatar">
+                        </div>
+                        <div class="suggestion-info">
+                            <h4 class="suggestion-name">Dicky A</h4>
+                            <p class="suggestion-title">Engineering Student</p>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                    
+                    <!-- Suggestion 4 -->
+                    <div class="suggestion-item">
+                        <div class="suggestion-avatar">
+                            <img src="../assets/img/avatar-placeholder.png" alt="User Avatar">
+                        </div>
+                        <div class="suggestion-info">
+                            <h4 class="suggestion-name">Dicky A</h4>
+                            <p class="suggestion-title">Engineering Student</p>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                    
+                    <!-- Suggestion 5 -->
+                    <div class="suggestion-item">
+                        <div class="suggestion-avatar">
+                            <img src="../assets/img/avatar-placeholder.png" alt="User Avatar">
+                        </div>
+                        <div class="suggestion-info">
+                            <h4 class="suggestion-name">Dicky A</h4>
+                            <p class="suggestion-title">Engineering Student</p>
+                        </div>
+                        <button class="follow-btn">Follow</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="popular-section">
+                <div class="section-header">
+                    <h3>Popular Projects</h3>
+                </div>
+                
+                <div class="popular-list">
+                    <div class="popular-item">
+                        <span class="popular-name">Blockchain</span>
+                        <span class="popular-count">• 1840 posts</span>
+                    </div>
+                    <div class="popular-item">
+                        <span class="popular-name">UI/UX Design</span>
+                        <span class="popular-count">• 940 posts</span>
+                    </div>
+                    <div class="popular-item">
+                        <span class="popular-name">Artificial Intelligence</span>
+                        <span class="popular-count">• 580 posts</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <a href="#">Contact</a>
+                <a href="#">About Us</a>
+                <a href="#">Terms</a>
+                <a href="#">Resources</a>
+                <a href="#">Support Center</a>
+            </div>
+        </aside>
+    </div>
+    
+    <!-- Mobile Menu Toggle -->
+    <div class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
