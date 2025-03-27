@@ -40,7 +40,7 @@
                 <div class="forget-password">
                     <a href="../forgot-password/index.html">Forget Password?</a>
                 </div>
-                <button type="submit" class="form-button">Sign In</button>
+                <button type="submit" class="form-button" id="loginButton">Sign In</button>
 
                 <!-- Sign Up -->
                 <div class="dont-have-acc">
@@ -57,5 +57,24 @@
             </div>
           </section>
      </div>
+
+<script>
+document.getElementById('loginButton').addEventListener('click', function(e) {
+    e.preventDefault();
+    
+    // Get input values
+    const email = document.querySelector('.input-text[type="email"]').value.trim();
+    const password = document.querySelector('.input-text[type="password"]').value.trim();
+    
+    // Validate inputs
+    if (!email || !password) {
+        alert('Please fill in both email and password fields');
+        return;
+    }
+    
+    // Only redirect if validation passes
+    window.location.href = '../HomePage/index.html'; 
+});
+</script>
 </body>
 </html>

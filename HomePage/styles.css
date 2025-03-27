@@ -91,7 +91,6 @@ button {
 
 /* ==================== NAVIGATION ==================== */
 .nav-menu {
-  margin: auto 0;
   flex-grow: 0;
   padding: 0 15px;
 }
@@ -120,8 +119,11 @@ button {
 
 .nav-menu ul li a:hover,
 .nav-menu ul li.active a {
-  background-color: transparent;
   color: var(--accent-color);
+}
+
+.nav-menu ul li a:hover {
+  background-color: rgba(70, 70, 70, 0.25);
 }
 
 /* ==================== PROFILE SECTION ==================== */
@@ -133,6 +135,7 @@ button {
   margin: 0 18px 0 15px;
 }
 
+/* ==================== PROFILE SECTION ==================== */
 .avatar {
   width: 38px;
   height: 38px;
@@ -141,6 +144,13 @@ button {
   margin-right: 12px;
   background-color: var(--secondary-bg);
   flex-shrink: 0;
+}
+
+.avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .user-name {
@@ -185,10 +195,14 @@ button {
   top: 0;
   left: var(--sidebar-width);
   right: var(--right-sidebar-width);
-  margin: 10px 20px;
   z-index: 100;
   background-color: var(--primary-bg);
-  padding: 10px 0;
+  padding: 5px 35px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.search-container i {
+  margin-left: 35px;
 }
 
 .search-input {
@@ -476,7 +490,7 @@ button {
   transition: color 0.3s;
 }
 
-.footer-links a:hover { color: var(--text-primary); }
+.footer-links a:hover { color: var(--accent-hover); }
 
 /* ==================== MOBILE MENU TOGGLE ==================== */
 .mobile-menu-toggle {
