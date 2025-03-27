@@ -42,3 +42,18 @@ document.addEventListener('DOMContentLoaded', function() {
     
     avatars.forEach(checkImage);
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const scrollButtons = document.querySelectorAll('.scroll-btn');
+    
+    scrollButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const direction = button.classList.contains('left') ? -1 : 1;
+            const wrapper = button.parentElement.querySelector('.images-wrapper');
+            wrapper.scrollBy({
+                left: direction * 220,
+                behavior: 'smooth'
+            });
+        });
+    });
+});
