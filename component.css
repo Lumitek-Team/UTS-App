@@ -80,3 +80,6 @@ a {
 .form-button:hover {
     background-color: #86E586;
 }
+.form-button:disabled {
+    background-color: #86e586ae;
+}
