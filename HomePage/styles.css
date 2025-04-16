@@ -559,6 +559,10 @@ button {
 		grid-template-columns: 280px 1fr 280px;
 	}
 
+	.search-container {
+		display: none;
+	}
+
 	.left-sidebar {
 		padding: 20px 10px;
 	}
@@ -593,7 +597,17 @@ button {
 		grid-template-columns: 1fr;
 	}
 
-	.left-sidebar,
+	.left-sidebar {
+		width: 80%;
+		display: flex;
+		left: -100%;
+		top: 0;
+		position: fixed;
+		z-index: 100;
+
+		transition: all 0.3s ease-in-out;
+	}
+
 	.right-sidebar {
 		display: none;
 	}
@@ -623,7 +637,8 @@ button {
 
 	/* Active States */
 	.left-sidebar.active {
-		width: 280px;
+		/* width: 280px; */
+		left: 0;
 	}
 
 	.right-sidebar.active {

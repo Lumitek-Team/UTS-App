@@ -13,21 +13,21 @@ document.addEventListener('DOMContentLoaded', function() {
     mobileMenuToggle.addEventListener('click', function() {
         leftSidebar.classList.toggle('active');
         
-        if (leftSidebar.classList.contains('active')) {
-            overlay.style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Prevent scrolling
-        } else {
-            overlay.style.display = 'none';
-            document.body.style.overflow = ''; // Allow scrolling
-        }
+        // if (leftSidebar.classList.contains('active')) {
+        //     overlay.style.display = 'block';
+        //     document.body.style.overflow = 'hidden'; // Prevent scrolling
+        // } else {
+        //     overlay.style.display = 'none';
+        //     document.body.style.overflow = ''; // Allow scrolling
+        // }
     });
     
     // Close sidebar when clicking on overlay
-    overlay.addEventListener('click', function() {
-        leftSidebar.classList.remove('active');
-        overlay.style.display = 'none';
-        document.body.style.overflow = ''; // Allow scrolling
-    });
+    // overlay.addEventListener('click', function() {
+    //     leftSidebar.classList.remove('active');
+    //     overlay.style.display = 'none';
+    //     document.body.style.overflow = ''; // Allow scrolling
+    // });
     
     // Create a placeholder avatar image if needed
     const avatarPlaceholder = '../assets/img/avatar-placeholder.png';
