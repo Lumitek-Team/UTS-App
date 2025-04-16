@@ -37,10 +37,10 @@
                 <!-- Form Confirm Password -->
                 <div class="form-input-group">
                     <label for="" class="label">Confirm Password <span>*</span></label>
-                    <input required type="password"class="input-text" placeholder="Password" id="confirm-password">
+                    <input required type="password"class="input-text" placeholder="Password" id="confirm-password" oninput="checkPass()">
                 </div>
                 <p id="message"></p>
-                <button type="submit" class="form-button" id="confirm-button" onclick="checkPass()">Confirm</button>
+                <button type="submit" class="form-button" id="confirm-button" disabled>Confirm</button>
             </form>
 
         </section>
