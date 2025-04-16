@@ -45,13 +45,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener('DOMContentLoaded', () => {
     const scrollButtons = document.querySelectorAll('.scroll-btn');
+
+    let imageContainers = document.getElementsByClassName('image-container')[0];
+    // get width imagecontainer
+    let imageContainerWidth = imageContainers.offsetWidth;
     
     scrollButtons.forEach(button => {
         button.addEventListener('click', () => {
             const direction = button.classList.contains('left') ? -1 : 1;
             const wrapper = button.parentElement.querySelector('.images-wrapper');
             wrapper.scrollBy({
-                left: direction * 220,
+                left: (direction * imageContainerWidth) + 15,
                 behavior: 'smooth'
             });
         });
